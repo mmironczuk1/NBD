@@ -1,0 +1,5 @@
+MongoDB shell version v3.6.8
+connecting to: mongodb://127.0.0.1:27017/nbd
+Implicit session: session { "id" : UUID("569d1c32-1a35-480d-9c48-99344da35c15") }
+MongoDB server version: 3.6.8
+{ "acknowledged" : true, "deletedCount" : 123 }
