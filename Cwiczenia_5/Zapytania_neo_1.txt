@@ -1,0 +1,29 @@
+Zad 1. MATCH (n:Movie) RETURN n
+Zad 2. MATCH (hugo: Person {name: "Hugo Weaving"})-[:ACTED_IN]->(movieswithWeaving :Movie) RETURN hugo, movieswithWeaving
+Zad 3. MATCH (hugo: Person {name: "Hugo Weaving"})-[:ACTED_IN]->(movieswithWeaving :Movie)<-[:DIRECTED]-(directors:Person) RETURN movieswithWeaving, directors
+Zad 4. MATCH (hugo: Person {name: "Hugo Weaving"})-[:ACTED_IN]->(movieswithWeaving :Movie)<-[:ACTED_IN]-(actedwithHugo:Person) RETURN actedwithHugo, hugo, movieswithWeaving
+Zad 5. MATCH (actedinMatrix: Movie)<-[:ACTED_IN]-(actors:Person)-[:ACTED_IN]->(theirotherMovies:Movie) WHERE actedinMatrix.title CONTAINS "Matrix" RETURN actors, theirotherMovies
+Zad 6. MATCH (actor: Person)-[:ACTED_IN]->(theirmovies:Movie) WHERE exists((actor)-[:ACTED_IN]->()) RETURN actor, count(*) AS numberofMovies
+Zad 7. MATCH (wroteANDdirected : Person)-[:WROTE]->(movies: Movie)<-[:DIRECTED]-(wroteANDdirected) RETURN wroteANDdirected, movies
+Zad 8. MATCH (keanu: Person {name: "Keanu Reeves"})-[:ACTED_IN]->(movieswiththem: Movie)<-[:ACTED_IN]-(hugo: Person {name: "Hugo Weaving"}) RETURN movieswiththem, keanu, hugo
+Zad 9.
+CREATE (captain: Movie {title: "Captain America: The First Avenger", released: 2011, tagline: "When Patriots Become Heroes"})
+
+CREATE (chrisevans: Person {name: "Chris Evans", born: 1981})
+CREATE (sebastianstan: Person {name: "Sebastian Stan", born: 1982})
+CREATE (joejohnston: Person {name: "Joe Johnston", born: 1950})
+CREATE (christophermarkus: Person {name: "Christopher Markus", born: 1970})
+CREATE (stephenmcfeely: Person {name: "Stephen McFeely", born: 1969})
+CREATE (joesimon: Person {name: "Joe Simon", born: 1913})
+CREATE (jackkirby: Person {name: "Jack Kirby", born: 1994})
+
+CREATE 
+(chrisevans)-[:ACTED_IN {roles: ["Steve Rogers"]}]->(captain),
+(sebastianstan)-[:ACTED_IN {roles:['James Buchanan \'Bucky\' Barnes']}]->(captain),
+(joejohnston)-[:DIRECTED]->(captain),
+(christophermarkus)-[:WROTE]->(captain),
+(stephenmcfeely)-[:WROTE]->(captain),
+(joesimon)-[:WROTE]->(captain),
+(jackkirby)-[:WROTE]->(captain)
+
+MATCH (firstavenger: Movie {title: 'Captain America: The First Avenger'})<--(creators: Person) RETURN firstavenger, creators
