@@ -1,0 +1,64 @@
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvr8bsa4bIpTIlsfKsOOU2y2+LAA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s23303>; rel="up"
+Last-Modified: Tue, 22 Jun 2021 20:57:28 GMT
+ETag: "6ZRZenQiwzLtJRNM4ldTu9"
+Date: Tue, 22 Jun 2021 20:57:28 GMT
+Content-Type: application/json
+Content-Length: 50
+
+{"pole1":"zzz","pole2":777,"pole3":21,"pole4":0.1}
+
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvr8brLANIpTImMfKwH7a7RZfFgA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s23303>; rel="up"
+Last-Modified: Tue, 22 Jun 2021 20:58:47 GMT
+ETag: "6wqEbawM9TDU5hasjIQd88"
+Date: Tue, 22 Jun 2021 20:58:47 GMT
+Content-Type: application/json
+Content-Length: 58
+
+{"pole1":"xcx","pole2":9883,"pole3":100000,"pole4":0.0001}
+
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvr8brBQIEUpkzGNlSDntdosvCwA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s23303>; rel="up"
+Last-Modified: Tue, 22 Jun 2021 21:00:20 GMT
+ETag: "DvcegdWcHOSOwpDTkGNmi"
+Date: Tue, 22 Jun 2021 21:00:20 GMT
+Content-Type: application/json
+Content-Length: 55
+
+{"pole1":"ff","pole2":123,"pole3":null,"pole4":12.9992}
+
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvr8b9e0MRCiRMY+Voeu02y2+LAA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s23303>; rel="up"
+Last-Modified: Tue, 22 Jun 2021 21:00:58 GMT
+ETag: "1EgBl36qlolAGAtl2sYrKs"
+Date: Tue, 22 Jun 2021 21:00:58 GMT
+Content-Type: application/json
+Content-Length: 46
+
+{"pole1":"b","pole2":4,"pole3":1,"pole4":0.97}
+
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvr8brFwAEUpkzGNlWHfa7RZfFgA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s23303>; rel="up"
+Last-Modified: Tue, 22 Jun 2021 21:01:34 GMT
+ETag: "65uCTeX7uPGR65kfoqt5TL"
+Date: Tue, 22 Jun 2021 21:01:34 GMT
+Content-Type: application/json
+Content-Length: 48
+
+{"pole1":"a","pole2":1,"pole3":null,"pole4":0.4}
